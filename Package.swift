@@ -4,6 +4,12 @@ import PackageDescription
 
 var package = Package(
   name: "swift-tagged",
+  platforms: [
+    .iOS(.v13),
+    .macOS(.v10_15),
+    .tvOS(.v13),
+    .watchOS("9.0"),
+  ],
   products: [
     .library(name: "Tagged", targets: ["Tagged"]),
     .library(name: "TaggedMoney", targets: ["TaggedMoney"]),
